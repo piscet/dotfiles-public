@@ -1,0 +1,36 @@
+# vim file
+
+.vim/**
+!.vim/keymap/
+!.vim/mysettings/
+
+!.vim/keymap/**
+!.vim/mysettings/**
+
+!.vim/vimrc
+!.vim/plugin.vim
+
+# config file
+
+.config/**
+!.config/*/
+
+!.config/fish/config.fish
+!.config/fish/fish_plugins
+!.config/fish/myconf/
+!.config/fish/myconf/**
+# !.config/fish/conf.d/
+# !.config/fish/conf.d/**
+
+!.config/tmux/**
+!.config/alacritty/*
+# !.config/i3/*
+# !.config/dunst/*
+# !.config/polybar/*
+
+# vim
+.*.swp
+
+# backup
+bak/
+

@@ -1,0 +1,77 @@
+" --- basic settings -----
+"" basic
+set backspace=indent,eol,start
+set noerrorbells
+set shellslash
+set clipboard=unnamed
+
+set cmdheight=2
+set showcmd
+set noshowmode
+
+"" option
+set tagstack
+
+"" read file
+set fileformats=unix,dos,mac
+set fileencodings=utf-8,sjis
+
+"" search
+set ignorecase
+set smartcase
+set wrapscan
+set incsearch
+set hlsearch
+
+"" view settings
+"" information
+set number
+
+set cursorline
+set cursorlineopt=number
+
+"" view
+set display=lastline
+syntax enable
+set title
+set wrap
+
+" complement
+"" view
+set wildmenu wildmode=full
+set pumheight=8
+set completeopt=menuone,noinsert
+inoremap <expr><CR> pumvisible()? "<C-y>" : "<CR>"
+inoremap <expr><C-n> pumvisible() ? "<Down>" : "<C-n>"
+inoremap <expr><C-p> pumvisible() ? "<Up>" : "<C-p>"
+
+"" tab
+set tabstop=4
+set expandtab
+set shiftwidth=4
+set smartindent
+set cindent
+
+" tab-window settings
+set splitbelow
+set splitright
+
+" --- my plugins ---------
+runtime! plugin.vim
+runtime! mysettings/*.vim
+
+" --- mapping ------------
+runtime! keymap/*.vim
+
+" --- local settings -----
+runtime! local_settings/*.vim
+
+" --- color scheme -------
+"set background=dark
+colorscheme molokai
+highlight Normal ctermbg=none
+highlight NonText ctermbg=none
+"highlight LineNr ctermbg=none
+highlight Folded ctermbg=none
+"highlight EndOfBuffer ctermbg=none
+

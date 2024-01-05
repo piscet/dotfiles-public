@@ -1,0 +1,40 @@
+" settings
+set laststatus=2
+set termguicolors
+
+" function
+function! GetFileType()
+    let _end = strlen(&filetype) - 2
+    return strpart(&filetype, filetype, _end)
+endfunction
+
+function! GetStatusline()
+    let _get_mode = mode()
+    let mode_table = {'i':      '2* Insert  ',
+    \                 'n':      '1* Normal  ',
+    \                 'R':      '2* Replace ',
+    \                 'c':      '3* Command ',
+    \                 't':      '4* Terminal',
+    \                 'v':      '4* Visual  ',
+    \                 'V':      '4* Visual  ',
+    \                 "\<C-v>": '4* Visual  ',
+    \                 'd':      '5* Unknown '}
+
+    let current = match(keys(mode_table), _get_mode) != -1 ? mode_table[_get_mode]
+    \                                                      : mode_table['d']
+
+    let left_line  = '%' . current . ' %* %f%m%r'
+    let right_line = &filetype . ' %1* %l.%c:%L %*'
+
+    return left_line . '%=' . right_line
+endfunction
+
+hi User1 guibg=#3A96DD
+hi User2 guibg=#5ADECD guifg=#282A36
+hi User3 guibg=#FF8037
+hi User4 guibg=#8897F4
+hi User5 guibg=#FF4971
+
+" set status line
+set statusline=%!GetStatusline()
+
