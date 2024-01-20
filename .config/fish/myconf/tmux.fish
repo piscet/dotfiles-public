@@ -2,7 +2,7 @@ if not status is-interactive
     exit 0
 end
 
-if string length -q -- $TMUX
+if set -q SSH_CLIENT ;or string length -q -- $TMUX
     exit 0
 end
 
