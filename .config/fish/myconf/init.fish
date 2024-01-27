@@ -1,5 +1,6 @@
 # execute tmux
 set -l current_path (dirname (status --current-filename))
+source $current_path/variable.fish
 source $current_path/tmux.fish
 
 # XDG Based Directory
@@ -21,9 +22,12 @@ set -x SYSTEMD_LESS FRXMK
 # less setting
 set -x LESS '-g -i -M -R -w -z-4 -x4'
 
-# init conf.d/*.fish
+# run conf.d/*.fish
 
 for config_file in $current_path/conf.d/*.fish
     source $config_file
 end
+
+# run local.fish
+source $current_path/local.fish
 
