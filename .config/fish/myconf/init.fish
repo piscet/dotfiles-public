@@ -1,6 +1,11 @@
 # execute tmux
 set -l current_path (dirname (status --current-filename))
-source $current_path/variable.fish
+
+# source $current_path/variable.fish
+if test -f $current_path/variable.fish
+    source $current_path/variable.fish
+end
+
 source $current_path/tmux.fish
 
 # XDG Based Directory
@@ -29,5 +34,7 @@ for config_file in $current_path/conf.d/*.fish
 end
 
 # run local.fish
-source $current_path/local.fish
+if test -f $current_path/local.fish
+    source $current_path/local.fish
+end
 
