@@ -10,6 +10,8 @@ vim.opt.showmode        = false
 
 -- - view
 vim.opt.number          = true
+vim.opt.title           = true
+vim.opt.wrap            = true
 
 -- - search
 vim.opt.ignorecase      = true
@@ -17,4 +19,13 @@ vim.opt.smartcase       = true
 vim.opt.wrapscan        = true
 vim.opt.incsearch       = true
 vim.opt.hlsearch        = true
+
+-- - tab
+vim.opt.tabstop         = 4
+vim.opt.expandtab       = true
+vim.opt.shiftwidth      = 4
+vim.opt.smartindent     = true
+vim.opt.cindent         = true
+vim.opt.splitbelow      = true
+vim.opt.splitright      = true
 
