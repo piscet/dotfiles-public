@@ -12,7 +12,11 @@ require('jetpack.packer').add {
     {'neovim/nvim-lspconfig'},
 
     -- auto complement
-    {'cohama/lexima.vim'}
+    {'cohama/lexima.vim'},
+
+    -- status line
+    {'nvim-tree/nvim-web-devicons'},
+    {'nvim-lualine/lualine.nvim'},
 }
 
 -- automatic plugin intallation on startup

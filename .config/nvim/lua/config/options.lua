@@ -13,6 +13,7 @@ vim.opt.showmode        = false
 vim.opt.number          = true
 vim.opt.title           = true
 vim.opt.wrap            = true
+vim.opt.showtabline     = 2
 
 -- - search
 vim.opt.ignorecase      = true

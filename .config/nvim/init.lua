@@ -6,5 +6,6 @@ require("config.keymap")
 require("plugins.jetpack")
 
 require("plugins.lsp")
+require("plugins.lualine")
 require("plugins.colorscheme")
 
