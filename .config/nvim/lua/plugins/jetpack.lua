@@ -1,22 +1,25 @@
 vim.cmd('packadd vim-jetpack')
 require('jetpack.packer').add {
-    {'tani/vim-jetpack'},
+    'tani/vim-jetpack',
 
     -- colorscheme
-    {'tomasr/molokai'},
-    {'jacoborus/tender.vim'},
+    'tomasr/molokai',
+    'jacoborus/tender.vim',
 
     -- lsp
-    {'williamboman/mason.nvim'},
-    {'williamboman/mason-lspconfig.nvim'},
-    {'neovim/nvim-lspconfig'},
+    'williamboman/mason.nvim',
+    'williamboman/mason-lspconfig.nvim',
+    'neovim/nvim-lspconfig',
+
+    -- ddc
+    'Shougo/ddc.vim',
 
     -- auto complement
-    {'cohama/lexima.vim'},
+    'cohama/lexima.vim',
 
     -- status line
-    {'nvim-tree/nvim-web-devicons'},
-    {'nvim-lualine/lualine.nvim'},
+    'nvim-tree/nvim-web-devicons',
+    'nvim-lualine/lualine.nvim',
 }
 
 -- automatic plugin intallation on startup
