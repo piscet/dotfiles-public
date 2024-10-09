@@ -5,7 +5,8 @@ require("config.keymap")
 -- plugin settings
 require("plugins.jetpack")
 
-require("plugins.lsp")
 require("plugins.lualine")
 require("plugins.colorscheme")
+require("plugins.lsp")
+require("plugins.ddc")
 
