@@ -13,6 +13,11 @@ require('jetpack.packer').add {
 
     -- ddc
     'Shougo/ddc.vim',
+    'Shougo/ddc-source-lsp',
+    'Shougo/ddc-source-around',
+    'Shougo/ddc-ui-native',
+    'Shougo/ddc-filter-matcher_head',
+    'Shougo/ddc-filter-sorter_rank',
 
     -- auto complement
     'cohama/lexima.vim',
