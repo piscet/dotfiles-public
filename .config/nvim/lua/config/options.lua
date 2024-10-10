@@ -12,8 +12,10 @@ vim.opt.showmode        = false
 -- - view
 vim.opt.number          = true
 vim.opt.title           = true
-vim.opt.wrap            = true
+vim.opt.wrap            = false
 vim.opt.showtabline     = 2
+vim.opt.scrolloff       = 5
+vim.opt.sidescrolloff   = 10
 
 -- - search
 vim.opt.ignorecase      = true
