@@ -16,6 +16,7 @@ set -x XDG_DATA_HOME   $HOME/.local/share
 
 # User APP Settings
 set -x USR_APP_HOME    $HOME/.local/app
+set -x USR_HIST_HOME   $HOME/.local/history
 
 # setting EDITOR and PAGER
 set -x EDITOR vim
@@ -25,7 +26,9 @@ set -x SUDO_EDITOR rvim
 set -x SYSTEMD_LESS FRXMK
 
 # less setting
-set -x LESS '-g -i -M -R -w -z-4 -x4'
+# set -x LESS '-g -i -M -R -w -z-4 -x4'
+set -x LESSKEYIN $XDG_CONFIG_HOME/common/lesskey
+set -x LESS -i -M -R -w -z-4 -x4
 
 # run conf.d/*.fish
 

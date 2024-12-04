@@ -1,0 +1,12 @@
+#command
+
+#line-edit
+^A home
+^B left
+^E end
+^F right
+^W word-backspace
+
+^[ abort
+
+#env

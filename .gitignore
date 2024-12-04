@@ -27,6 +27,7 @@
 !.config/tmux/**
 !.config/alacritty/*
 !.config/nvim/**
+!.config/common/*
 # !.config/i3/*
 # !.config/dunst/*
 # !.config/polybar/*
