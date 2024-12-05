@@ -27,8 +27,9 @@ set -x SYSTEMD_LESS FRXMK
 
 # less setting
 # set -x LESS '-g -i -M -R -w -z-4 -x4'
-set -x LESSKEYIN $XDG_CONFIG_HOME/common/lesskey
-set -x LESS -i -M -R -w -z-4 -x4
+set -x LESSKEYIN    $XDG_CONFIG_HOME/common/lesskey
+set -x LESSHISTFILE $XDG_STATE_HOME/lesshst
+set -x LESS         -i -M -R -w -z-4 -x4
 
 # run conf.d/*.fish
 
