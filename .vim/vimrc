@@ -56,6 +56,9 @@ set cindent
 set splitbelow
 set splitright
 
+" viminfo file
+set viminfo+=n~/.local/state/viminfo
+
 " --- my plugins ---------
 runtime! plugin.vim
 runtime! mysettings/*.vim
