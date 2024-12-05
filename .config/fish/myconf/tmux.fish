@@ -1,5 +1,5 @@
 set _read_cmd "echo 'choose session > '"
-set _new_session_cmd "echo 'session name > '"
+set _new_session_cmd "echo 'session name (Default name is session id)> '"
 
 if not status is-interactive; \
    or set -q SSH_CLIENT; \
@@ -14,6 +14,7 @@ end
 
 if not tmux list-sessions -F\#S | grep -q $SESSION_NAME
     tmux new -s $SESSION_NAME
+    exit 0
 end
 
 printf 'Cannot create session %s ' $SESSION_NAME
@@ -58,7 +59,8 @@ while true
                 read -p $_new_session_cmd _new_session_name; 
 
                 if not string length -q -- $_new_session_name
-                    break
+                    tmux new
+                    exit 0
                 end
 
                 if not tmux list-sessions -F\#S | grep -q $_new_session_name
