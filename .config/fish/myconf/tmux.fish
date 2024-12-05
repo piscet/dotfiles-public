@@ -7,6 +7,19 @@ if not status is-interactive; \
     exit 0
 end
 
+if not set -q SESSION_NAME
+    set -x SESSION_NAME Term
+    exit 0
+end
+
+if not tmux list-sessions -F\#S | grep -q $SESSION_NAME
+    tmux new -s $SESSION_NAME
+end
+
+printf 'Cannot create session %s ' $SESSION_NAME
+printf 'due to duplicate session name.\n'
+printf "\n"
+
 while true
     for line in (tmux list-sessions -F '#{session_id} #{?session_attached,yes,no} #S')
         set _line_split (echo $line | string split ' ')
@@ -32,6 +45,7 @@ while true
     printf '\n'
 
     read -p $_read_cmd _select_index
+    printf '\n'
 
     if not string length -q -- $_select_index
         break
@@ -47,9 +61,9 @@ while true
                     break
                 end
 
-                printf 'create session %s...\n\n' $_new_session_name
-
                 if not tmux list-sessions -F\#S | grep -q $_new_session_name
+                    printf 'create session %s...\n\n' $_new_session_name
+
                     if not tmux new -s $_new_session_name
                         printf '\n'
                         printf 'Error: Failed to create session %s ' $_new_session_name
@@ -62,14 +76,16 @@ while true
                     printf 'due to a duplicate session name.\n'
                 end
 
-                printf 'please specify a different session name.\n'
+                printf 'please specify a different session name.\n\n'
                 set -e _new_session_name
             end
 
             break
         case q
+            # quit
             break
         case $_index_list
+            # select
             set _attach_name $_session_name[$_select_index]
             if not tmux attach-session -t $_attach_name
                 printf '\n'
@@ -77,6 +93,9 @@ while true
                 printf 'due to an error with the tmux command.\n'
             end
             exit 0
+        case \*
+            # default
+            printf "Error: Invalid Argument %s.\n" $_index_list
     end
 
     # erase variable
