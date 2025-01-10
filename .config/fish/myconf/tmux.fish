@@ -9,7 +9,7 @@ end
 
 if not set -q SESSION_NAME
     set -x SESSION_NAME Term
-    exit 0
+    # exit 0
 end
 
 if not tmux list-sessions -F\#S | grep -q $SESSION_NAME
