@@ -18,6 +18,9 @@ set -x XDG_DATA_HOME   $HOME/.local/share
 set -x USR_APP_HOME    $HOME/.local/app
 set -x USR_HIST_HOME   $HOME/.local/history
 
+# PATH
+fish_add_path $HOME/.local/bin
+
 # setting EDITOR and PAGER
 set -x EDITOR vim
 set -x VISUAL vim
