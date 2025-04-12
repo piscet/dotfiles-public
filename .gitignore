@@ -17,6 +17,7 @@
 
 !.config/fish/config.fish
 !.config/fish/fish_plugins
+!.config/fish/fish_variables
 !.config/fish/myconf/
 !.config/fish/myconf/**
 .config/fish/myconf/local.fish
