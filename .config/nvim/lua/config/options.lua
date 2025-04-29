@@ -1,54 +1,56 @@
+local opt = vim.opt
+
 -- option
 -- - basic
-vim.opt.encoding        = "utf-8"
-vim.opt.fileencodings   = "utf-8,sjis"
-vim.opt.fileformats     = "unix,dos,mac"
-vim.opt.mouse           = ""
+opt.encoding        = "utf-8"
+opt.fileencodings   = "utf-8,sjis"
+opt.fileformats     = "unix,dos,mac"
+opt.mouse           = ""
 -- vim.opt.clipboard       = "unnamed"
 
-vim.opt.cmdheight       = 2
-vim.opt.showcmd         = true
-vim.opt.showmode        = false
+opt.cmdheight       = 2
+opt.showcmd         = true
+opt.showmode        = false
 
-vim.opt.tagstack        = true
+opt.tagstack        = true
 
 -- - view
-vim.opt.number          = true
-vim.opt.title           = true
-vim.opt.wrap            = false
-vim.opt.showtabline     = 2
+opt.number          = true
+opt.title           = true
+opt.wrap            = false
+opt.showtabline     = 2
 
-vim.opt.scrolloff       = 5
-vim.opt.sidescrolloff   = 10
-vim.opt.errorbells      = false
+opt.scrolloff       = 5
+opt.sidescrolloff   = 10
+opt.errorbells      = false
 
-vim.opt.cursorline      = true
-vim.opt.cursorlineopt   = number
+opt.cursorline      = true
+opt.cursorlineopt   = number
 
-vim.opt.display         = "lastline"
-vim.opt.syntax          = "enable"
+opt.display         = "lastline"
+opt.syntax          = "enable"
 
 -- - search
-vim.opt.ignorecase      = true
-vim.opt.smartcase       = true
-vim.opt.wrapscan        = true
-vim.opt.incsearch       = true
-vim.opt.hlsearch        = true
+opt.ignorecase      = true
+opt.smartcase       = true
+opt.wrapscan        = true
+opt.incsearch       = true
+opt.hlsearch        = true
 
 -- - tab
-vim.opt.tabstop         = 4
-vim.opt.expandtab       = true
-vim.opt.shiftwidth      = 4
-vim.opt.smartindent     = true
-vim.opt.cindent         = true
+opt.tabstop         = 4
+opt.expandtab       = true
+opt.shiftwidth      = 4
+opt.smartindent     = true
+opt.cindent         = true
 
 -- - window
-vim.opt.splitbelow      = true
-vim.opt.splitright      = true
+opt.splitbelow      = true
+opt.splitright      = true
 
 -- - complement
-vim.opt.wildmenu        = true
-vim.opt.wildmode        = "full"
-vim.opt.pumheight       = 8
-vim.opt.completeopt     = "menuone,noinsert"
+opt.wildmenu        = true
+opt.wildmode        = "full"
+opt.pumheight       = 8
+opt.completeopt     = "menuone,noinsert"
 
