@@ -25,6 +25,9 @@ require('jetpack.packer').add {
     -- status line
     'nvim-tree/nvim-web-devicons',
     'nvim-lualine/lualine.nvim',
+
+    -- fuzzy finder
+    'ibhagwan/fzf-lua'
 }
 
 -- automatic plugin intallation on startup

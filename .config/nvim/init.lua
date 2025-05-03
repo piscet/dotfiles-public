@@ -7,6 +7,8 @@ require("plugins.jetpack")
 
 require("plugins.lualine")
 require("plugins.colorscheme")
+require("plugins.fzf-lua-settings")
+
 require("plugins.lsp")
-require("plugins.ddc")
+-- require("plugins.ddc")
 
