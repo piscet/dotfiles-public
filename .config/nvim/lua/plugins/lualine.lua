@@ -1,5 +1,8 @@
 require('lualine').setup {
-    options = { theme = 'nightfly' },
+    options = { 
+        theme = 'ayu_mirage',
+        icons_enabled = true,
+    },
     tabline = {
         lualine_a = {
             {
