@@ -25,7 +25,7 @@ opt.sidescrolloff   = 10
 opt.errorbells      = false
 
 opt.cursorline      = true
-opt.cursorlineopt   = number
+opt.cursorlineopt   = "number"
 
 opt.display         = "lastline"
 opt.syntax          = "enable"
@@ -54,3 +54,9 @@ opt.wildmode        = "full"
 opt.pumheight       = 8
 opt.completeopt     = "menuone,noinsert"
 
+-- - jump
+vim.api.nvim_create_autocmd('VimEnter', {
+    callback = function()
+        vim.api.nvim_command "clearjump"
+    end,
+})
