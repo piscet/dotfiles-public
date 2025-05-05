@@ -16,12 +16,13 @@
 !.config/*/
 
 !.config/fish/config.fish
+!.config/fish/tmux.fish
 !.config/fish/fish_plugins
 !.config/fish/fish_variables
+!.config/fish/conf.d/
+!.config/fish/conf.d/**
 !.config/fish/myconf/
 !.config/fish/myconf/**
-.config/fish/myconf/local.fish
-.config/fish/myconf/variable.fish
 # !.config/fish/conf.d/
 # !.config/fish/conf.d/**
 
