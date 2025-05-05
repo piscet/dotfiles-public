@@ -60,7 +60,10 @@ keymap.set("n", "<Leader>,", ":tabe ~/.config/nvim/lua/config/options.lua<Return
 keymap.set("n", "<Leader>.", ":tabe ~/.config/nvim/lua/config/keymap.lua<Return>", opts)
 
 -- quickfix
+keymap.set("n", "<C-g>", "<Nop>", opts)
 keymap.set("n", "<C-g>q", ":ccl<Return>", opts)
+keymap.set("n", "<C-n>", ":cnext<Return>", opts)
+keymap.set("n", "<C-p>", ":cprev<Return>", opts)
 
 -- command
 keymap.set("c", "<C-a>", "<Home>", opts)

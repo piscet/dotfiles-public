@@ -7,11 +7,12 @@ require('jetpack.packer').add {
     'jacoborus/tender.vim',
 
     -- lsp
+    'neovim/nvim-lspconfig',
     'williamboman/mason.nvim',
     'williamboman/mason-lspconfig.nvim',
-    'neovim/nvim-lspconfig',
 
     -- ddc
+    'vim-denops/denops.vim',
     'Shougo/ddc.vim',
     'Shougo/ddc-source-lsp',
     'Shougo/ddc-source-around',

@@ -52,7 +52,7 @@ opt.splitright      = true
 opt.wildmenu        = true
 opt.wildmode        = "full"
 opt.pumheight       = 8
-opt.completeopt     = "menuone,noinsert"
+opt.completeopt     = "fuzzy,menuone,noinsert"
 
 -- - jump
 vim.api.nvim_create_autocmd('VimEnter', {
