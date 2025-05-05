@@ -21,10 +21,10 @@
 !.config/fish/fish_variables
 !.config/fish/conf.d/
 !.config/fish/conf.d/**
-!.config/fish/myconf/
-!.config/fish/myconf/**
-# !.config/fish/conf.d/
-# !.config/fish/conf.d/**
+!.config/fish/template/
+!.config/fish/template/**
+# !.config/fish/myconf/
+# !.config/fish/myconf/**
 
 !.config/tmux/**
 !.config/alacritty/*
