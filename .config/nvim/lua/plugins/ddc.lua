@@ -1,7 +1,7 @@
 local mysnippet = '~/.config/nvim/snippets'
 
 vim.fn["ddc#custom#patch_global"]('ui', 'native')
-vim.fn["ddc#custom#patch_global"]('sources', { 'around', 'vim-lsp' })
+vim.fn["ddc#custom#patch_global"]('sources', { 'around', 'lsp' })
 vim.fn["ddc#custom#patch_global"]('sourceOptions', {
     ["around"]  = {
         mark = '  [Around]',
