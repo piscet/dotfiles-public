@@ -11,7 +11,7 @@ vim.fn["ddc#custom#patch_global"]('sourceOptions', {
     },
     _ = {
         matchers = { 'matcher_head' },
-        sources  = { 'sorter_rank' },
+        sorters  = { 'sorter_rank' },
     },
 })
 vim.fn["ddc#custom#patch_global"]('sourceParams', {
