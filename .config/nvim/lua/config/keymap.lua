@@ -40,7 +40,6 @@ keymap.set("n", "sd", ":tab split<Return>", opts)
 keymap.set("n", "sq", "<C-w>q", opts)
 
 keymap.set("n", "sc", ":tabe<Return>", opts)
--- keymap.set("n", "sf", ":e .<Return>", opts)
 
 keymap.set("n", "s1", ":tabnext 1<Return>", opts)
 keymap.set("n", "s2", ":tabnext 2<Return>", opts)
