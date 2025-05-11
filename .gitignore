@@ -27,6 +27,8 @@
 # !.config/fish/myconf/**
 
 !.config/tmux/**
+.config/tmux/template/
+.config/tmux/local.conf
 !.config/alacritty/*
 !.config/nvim/**
 !.config/common/*
