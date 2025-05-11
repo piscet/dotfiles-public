@@ -6,12 +6,36 @@ local mason_lspconfig = require("mason-lspconfig")
 require("mason").setup()
 mason_lspconfig.setup ({
     ensure_installed = {
+        -- C/C++
         "clangd",
         "ast_grep",
         "harper_ls",
+
+        -- Rust
         "rust_analyzer",
+
+        -- Lua
         "lua_ls",
+
+        -- cmake
         "cmake",
+        "neocmake",
+
+        -- bash
+        "bashls",
+        
+        -- markdown
+        "grammarly",
+        "ltex",
+        "markdown_oxide",
+        "marksman",
+        "prosemd_lsp",
+        "remark_ls",
+        "vale_ls",
+        "zk",
+
+        -- OCaml
+        -- "ocamllsp",
     }
 })
 mason_lspconfig.setup_handlers({
