@@ -1,7 +1,10 @@
 require('lualine').setup {
     options = { 
-        theme = 'ayu_mirage',
+        -- theme = 'ayu_mirage',
+        theme = 'catppuccin',
         icons_enabled = true,
+        component_separators = { left = '', right = '' },
+        section_separators   = { left = '', right = '' },
     },
     tabline = {
         lualine_a = {
