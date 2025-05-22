@@ -7,6 +7,7 @@ require("plugins.jetpack")
 
 -- - colorscheme
 require("plugins.colorscheme")
+-- require("plugins.catppuccin")
 
 -- - lualine
 require("plugins.lualine")
