@@ -1,5 +1,6 @@
 [general]
-import = ["/home/pisce/.local/share/alacritty/catppuccin/catppuccin-mocha.toml"]
+import = [ "~/.local/share/alacritty/catppuccin/catppuccin-mocha.toml",
+           "~/.config/alacritty/keybindings.toml" ]
 
 [env]
 TERM = "xterm-256color"
