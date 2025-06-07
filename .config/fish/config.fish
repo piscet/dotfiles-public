@@ -27,11 +27,11 @@ set -x USR_HIST_HOME   $HOME/.local/history
 fish_add_path $HOME/.local/bin
 
 # setting EDITOR and PAGER
-set -x EDITOR vim
-set -x VISUAL vim
+set -x EDITOR nvim
+set -x VISUAL nvim
 set -x PAGER  less
 #set -x PAGER  most
-set -x SUDO_EDITOR rvim
+set -x SUDO_EDITOR nvim
 set -x SYSTEMD_LESS FRXMK
 
 # less setting
