@@ -27,6 +27,7 @@ mason_lspconfig.setup ({
         -- markdown
         "grammarly",
         "ltex",
+        "ltex-ls",
         "markdown_oxide",
         "marksman",
         "prosemd_lsp",
