@@ -7,9 +7,12 @@ if not status is-interactive; \
     exit 0
 end
 
+if not tty | grep "/dev/pts" > /dev/null
+    exit 0
+end
+
 if not set -q SESSION_NAME
     set -x SESSION_NAME Term
-    # exit 0
 end
 
 if not tmux list-sessions -F\#S | grep -q $SESSION_NAME
