@@ -7,6 +7,9 @@ require('jetpack.packer').add {
     { 'jacoborus/tender.vim' },
     { 'catppuccin/nvim', as = 'catppuccin' },
 
+    -- layout
+    { 'lukas-reineke/indent-blankline.nvim' },
+
     -- lsp
     { 'neovim/nvim-lspconfig' },
     { 'williamboman/mason.nvim' , tag = 'v1.11.0', lock = true },

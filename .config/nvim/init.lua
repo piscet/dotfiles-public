@@ -9,6 +9,10 @@ require("plugins.jetpack")
 require("plugins.colorscheme")
 -- require("plugins.catppuccin")
 
+-- - layout settings
+require("plugins.indent-blankline")
+
+
 -- - lualine
 require("plugins.lualine")
 
