@@ -6,7 +6,7 @@ require("config.keymap")
 require("plugins.jetpack")
 
 -- - colorscheme
-require("plugins.colorscheme")
+-- require("plugins.colorscheme")
 -- require("plugins.catppuccin")
 
 -- - layout settings
